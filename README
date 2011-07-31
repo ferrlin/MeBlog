@@ -1,0 +1,6 @@
+This is my own personal blog engine written using scala and scalatra.
+
+
+This is build using sbt 0.10.1
+
+
