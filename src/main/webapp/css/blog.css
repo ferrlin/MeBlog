@@ -1,0 +1,183 @@
+
+body, html {
+	background: #ffffff;
+	font-size: 12px;
+	font-family: tahoma, arial, verdana, helvetica;
+	color: #666666;
+	text-align: center;
+	margin: 0px 0 20px 0;
+	line-height: 1.6em;
+}
+
+a, a:link, a:active, a:visited {
+	color: #B39D00;
+	text-decoration: none;
+	border-bottom: 1px solid #A4D867;
+}
+
+a:hover {
+	text-decoration: none;
+	border: 0;
+	color: #4F4600;
+	border-bottom: 1px solid #C4B300;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+acronym, abbr, span.caps {
+	cursor: help;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #C4B300;
+}
+
+blockquote {
+	margin: 15px 25px 0 15px;
+	padding-left: 25px;
+	font-family: arial, helvetica, sans-serif;
+	border-left: 2px solid #A4D867;
+}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+}
+
+.date-header {
+	margin-top:10px;
+	font-size: 9px;
+	font-weight: bold;
+	color: #A4D867;
+	text-align: right;
+	border-bottom: 1px dotted #E9E6B4;
+	padding: 2px 2px 2px 2px;
+	letter-spacing: 0.1em;
+}
+
+/*
+ * Post related styling
+ */
+.post-title a, .post-title a:visited{
+	font-family: "trebuchet ms", tahoma, arial;
+	color: #B39D00;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	border:0;
+}
+
+.post-title a:hover {
+	background: transparent;
+	border:0;
+}
+
+.post-title {
+	padding-bottom: 10px;
+	padding-left: 35px;
+	background: url(http://i90.photobucket.com/albums/k268/pernakpernik/bgside.gif) top left no-repeat;
+	
+}
+
+.post-footer {
+	color: #999999;
+	font-size: 11px;
+}
+
+.desc {
+	color: #C69200;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 20px;
+	font-family: "trebuchet ms", tahoma , arial;
+	text-align: left;
+}
+
+#container {
+	font-family: tahoma, arial, verdana, helvetica;
+	text-align: left;
+	background: #ffffff;
+	width:700px;
+	margin: 0px auto;
+	font-size: 11px;
+	line-height: 1.5em;
+}
+
+#header {
+	font-family: "Trebuchet ms", arial, verdana, helvetica;
+	margin: 0px auto;
+	height: 100px;
+	text-align: right;
+	width: 700px;
+	background:#ffffff url(http://i90.photobucket.com/albums/k268/pernakpernik/headbg.gif) top right no-repeat;
+}
+
+#header h1, #header h1 a {
+	color: #AA800E;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 10px;
+	font-family: "Trebuchet ms", tahoma, arial, helvetica;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	border: 0px;
+	text-align: left;
+}
+
+#header h1 a:hover {
+	background: transparent;
+}
+
+#content-post {
+	float: left;
+	padding: 0px 10px 10px 20px;
+	margin: 0px;
+	width: 434px;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+/**
+ * Sidebar related styling
+ */
+
+#sidebar {
+	padding: 0 10px 10px 15px;
+	margin: 0;
+	width: 210px;
+	float: right;
+	background: #ffffff;
+	font-size: 11px;
+}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li {
+	margin-left: 15px;
+	padding: 0;
+	list-style-type: square;
+}
+
+#footer {
+	margin: 0px auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #AA800E;
+	text-align: center;
+	width: 700px;
+	color: #efefef;
+}
+
+.clear {
+	clear: both;
+}

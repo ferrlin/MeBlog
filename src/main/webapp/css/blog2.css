@@ -1,0 +1,986 @@
+
+gger Template Design: Simple n' Sweet
+Design by: Ourblogtemplates.com
+Terms of Use: Free template with credit linked to Ourblogtemplates.com
+----------------------------------------------------------------------- */
+/* Variable definitions
+ * ========================
+ * <Variable name="bodybgColor" description="Body Background Color"
+ * type="color" default="#FFBBE8">
+ * <Variable name="blogframeColor" description="Blog Background Color"
+ * type="color" default="#800040">
+ * <Variable name="blogBorderColor" description="Blog Border Color"
+ * type="color" default="#800040">
+ * <Variable name="headerbgColor" description="Header Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="headerBorderColor" description="Header Border Color"
+ * type="color" default="#800040">
+ * <Variable name="blogTitleColor" description="Blog Title Color"
+ * type="color" default="#800040">
+ * <Variable name="blogDescriptionColor" description="Blog Description Color"
+ * type="color" default="#800040">
+ * <Variable name="linkbarbgColor" description="Linkbar Background Color"
+ * type="color" default="#C94093">
+ * <Variable name="linkbarmainBorderColor" description="Linkbar Main Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="linkbarBorderColor" description="Linkbar Border Color"
+ * type="color" default="#9D1961">
+ * <Variable name="linkbarTextColor" description="Linkbar Text Color"
+ * type="color" default="#ffffff">
+ * <Variable name="linkbarTextBgColor" description="Linkbar Text Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="linkbarHoverBgColor" description="Linkbar Hover Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="linkbarHoverTextColor" description="Linkbar Hover Text Color"
+ * type="color" default="#9D1961">
+ * <Variable name="middlebarbgColor" description="Middlebar Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="contentbgColor" description="Content Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="contentBorderColor" description="Content Border Color"
+ * type="color" default="#9D1961">
+ * <Variable name="postbgColor" description="Post Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="postBorderColor" description="Post Border Color"
+ * type="color" default="#ffffff">
+ * <Variable name="postTitleColor" description="Post Title Color"
+ * type="color" default="#000000">
+ * <Variable name="posttitlebgColor" description="Post Title Background Color"
+ * type="color" default="#000000">
+ * <Variable name="posttitleBorderColor" description="Post Title Border Color"
+ * type="color" default="#000000">
+ * <Variable name="dateHeaderColor" description="Date Header Color"
+ * type="color" default="#000000">
+ * <Variable name="textColor" description="Text Color"
+ * type="color" default="#191919">
+ * <Variable name="mainLinkColor" description="Main Link Color"
+ * type="color" default="#333333">
+ * <Variable name="mainHoverLinkColor" description="Main Hover Link Color"
+ * type="color" default="#9D1961">
+ * <Variable name="mainVisitedLinkColor" description="Main Visited Link Color"
+ * type="color" default="#9D1961">
+ * <Variable name="blockquotebgColor" description="Blockquote Background Color"
+ * type="color" default="#191919">
+ * <Variable name="blockquoteBorderColor" description="Blockquote Border Color"
+ * type="color" default="#191919">
+ * <Variable name="blockQuoteColor" description="Blockquote Color"
+ * type="color" default="#191919">
+ * <Variable name="codeTextColor" description="Code Text Color"
+ * type="color" default="#660000">
+ * <Variable name="imagebgColor" description="Photo Background Color"
+ * type="color" default="#f5f5f5">
+ * <Variable name="imageBorderColor" description="Photo Border Color"
+ * type="color" default="#f5f5f5">
+ * <Variable name="postfooterBgColor" description="Postfooter Background Color"
+ * type="color" default="#b8659C">
+ * <Variable name="postfooterBorderColor" description="Postfooter Border Color"
+ * type="color" default="#b8659C">
+ * <Variable name="postfooterTextColor" description="Postfooter Text Color"
+ * type="color" default="#b8659C">
+ * <Variable name="postfooterLinkColor" description="Postfooter Link Color"
+ * type="color" default="#b8659C">
+ * <Variable name="commentTabLinkColor" description="Comment Tab Link Color"
+ * type="color" default="#b8659C">
+ * <Variable name="feedlinksColor" description="Feed Links Color"
+ * type="color" default="#9D1961">
+ * <Variable name="sidebar1bgColor" description="Sidebar1 Background Color"
+ * type="color" default="#FFBBE8">
+ * <Variable name="sidebar1BorderColor" description="Sidebar1 Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="sidebar1HeaderBgColor" description="Sidebar1 Header Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="sidebar1HeaderBorderColor" description="Sidebar1 Header Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="sidebar1HeaderColor" description="Sidebar1 Header Color"
+ * type="color" default="#000000">
+ * <Variable name="sidebar1TextColor" description="Sidebar1 Text Color"
+ * type="color" default="#9D1961">
+ * <Variable name="sidebar1LinkColor" description="Sidebar1 Link Color"
+ * type="color" default="#9D1961">
+ * <Variable name="sidebar1HoverLinkColor" description="Sidebar1 Hover Link Color"
+ * type="color" default="#000000">
+ * <Variable name="sidebar1VisitedLinkColor" description="Sidebar1 Visited Link Color"
+ * type="color" default="#000000">
+ * <Variable name="sidebarListLineColor" description="Sidebar List Line Color"
+ * type="color" default="#000000">
+ * <Variable name="profileBorderColor" description="Profile Border Color"
+ * type="color" default="#000000">
+ * <Variable name="lowerbarbgColor" description="Lowerbar Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="lowerbarBorderColor" description="Lowerbar Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="sublowerbarbgColor" description="Sublowerbar Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="sublowerbarBorderColor" description="Sublowerbar Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="lowerbarHeaderColor" description="Lowerbar Header Color"
+ * type="color" default="#000000">
+ * <Variable name="lowerbarTitleBgColor" description="Lowerbar Header Background Color"
+ * type="color" default="#C94093">
+ * <Variable name="lowerbarHeaderBorderColor" description="Lowerbar Header Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="lowerbarTextColor" description="Lowerbar Text Color"
+ * type="color" default="#9D1961">
+ * <Variable name="lowerbarLinkColor" description="Lowerbar Link Color"
+ * type="color" default="#9D1961">
+ * <Variable name="lowerbarHoverLinkColor" description="Lowerbar Hover Link Color"
+ * type="color" default="#000000">
+ * <Variable name="lowerbarVisitedLinkColor" description="Lowerbar Visited Link Color"
+ * type="color" default="#000000">
+ * <Variable name="lowerbarListLineColor" description="Lowerbar List Line Color"
+ * type="color" default="#000000">
+ * <Variable name="commentbgColor" description="Comment Background Color"
+ * type="color" default="#9D1961">
+ * <Variable name="commentBorderColor" description="Comment Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="commentboxBgColor" description="Comment Box Background Color"
+ * type="color" default="#9D1961">
+ * <Variable name="commentboxBorderColor" description="Comment Box Border Color"
+ * type="color" default="#C94093">
+ * <Variable name="commentTitleColor" description="Comment Header Color"
+ * type="color" default="#000000">
+ * <Variable name="commentauthorBgColor" description="Comment Author Background Color"
+ * type="color" default="#9D1961">
+ * <Variable name="commentauthorColor" description="Comment Author Color"
+ * type="color" default="#9D1961">
+ * <Variable name="commentTimeStampColor" description="Comment Timestamp Color"
+ * type="color" default="#C94093">
+ * <Variable name="commentTextColor" description="Comment Text Color"
+ * type="color" default="#4c4c4c">
+ * <Variable name="footerbgColor" description="Footer Background Color"
+ * type="color" default="#ffffff">
+ * <Variable name="footerBorderColor" description="Footer Border Color"
+ * type="color" default="#000000">
+ * <Variable name="footerHeaderColor" description="Footer Header Color"
+ * type="color" default="#000000">
+ * <Variable name="footerTextColor" description="Footer Text Color"
+ * type="color" default="#C94093">
+ * <Variable name="footerLinkColor" description="Footer Link Color"
+ * type="color" default="#C94093">
+ * <Variable name="footerHoverLinkColor" description="Footer Hover Link Color"
+ * type="color" default="#C94093">
+ * <Variable name="footerVisitedLinkColor" description="Footer Visited Link Color"
+ * type="color" default="#C94093">
+ * <Variable name="blogTitleFont" description="Blog Title Font"
+ * type="font"
+ * default="normal bold 273% Georgia, Times, serif"
+ * >
+ * <Variable name="blogDescriptionFont" description="Blog Description Font"
+ * type="font"
+ * default="normal normal 104% georgia,helvetica,verdana,Georgia, serif"
+ * >
+ * <Variable name="linkbarTextFont" description="Linkbar Text Font"
+ * type="font"
+ * default="normal normal 77% Verdana, sans-serif"
+ * >
+ * <Variable name="postTitleFont" description="Post Title Font"
+ * type="font"
+ * default="normal bold 180% Georgia, Times, serif"
+ * >
+ * <Variable name="dateHeaderFont" description="Date Header Font"
+ * type="font"
+ * default="normal bold 117% Arial, sans-serif"
+ * >
+ * <Variable name="textFont" description="Text Font"
+ * type="font"
+ * default="normal normal 90% Arial, sans-serif"
+ * >
+ * <Variable name="quoteFont" description="Blog Quote Font"
+ * type="font"
+ * default="normal normal 92% helvetica,tahoma,verdana,arial,times,Sans-serif"
+ * >
+ * <Variable name="sidebarHeaderFont" description="Sidebar Title Font"
+ * type="font"
+ * default="normal bold 117% Arial, sans-serif"
+ * >
+ * <Variable name="sidebarTextFont" description="Sidebar Text Font"
+ * type="font"
+ * default="normal normal 78% Arial, Verdana, sans-serif"
+ * >
+ * <Variable name="postfooterTextFont" description="Post-Footer Text Font"
+ * type="font"
+ * default="normal normal 93% Arial, sans-serif"
+ * >
+ * <Variable name="commentTitleFont" description="Comment Title Font"
+ * type="font"
+ * default="normal bold 120% Arial, sans-serif"
+ * >
+ * <Variable name="commentTextFont" description="Comment Text Font"
+ * type="font"
+ * default="normal normal 95% Arial, sans-serif"
+ * >
+ * <Variable name="footerHeaderFont" description="Footer Header Font"
+ * type="font"
+ * default="normal bold 131% Trebuchet, Trebuchet MS, Arial, sans-serif"
+ * >
+ * <Variable name="footerTextFont" description="Footer Text Font"
+ * type="font"
+ * default="normal normal 76% Trebuchet, Trebuchet MS, Arial, sans-serif"
+ * >
+ * */
+/* -----   GLOBAL   ----- Blogger template design by Ourblogtemplates.com */
+* {margin:0; padding:0;}
+* body {
+* margin: 0px 0px 0px 0px;
+* padding: 0px 0px 0px 0px;
+* text-align: center;
+* color: #7f7f7f;
+* background: #ffffff url() repeat top right;
+*/* background-attachment: fixed; */
+font-family: arial,verdana,helvetica,tahoma,Sans-serif;
+font-size: 100%;
+width: 100%;
+}
+#outer-wrapper {
+margin: 0 auto;   /* auto - to make the template lay in the screen center */
+padding: 0px 0px 0px 0px;
+margin-top: 15px;
+margin-bottom: 15px;
+position: relative;
+width: 100%;
+text-align: center;
+}
+#blog-wrapper {
+margin: 0 auto;   /* auto - to make the template lay in the screen center */
+padding: 7px;
+margin-top: 0px;
+margin-bottom: 35px;
+text-align: center;
+position: relative;
+width: 980px;
+background: #ffffff;
+border: 1px solid #e6e6e6;
+}
+#spacer {clear: both; margin: 0; padding: 0;}
+/* global link attributes */
+a {color: #E85E03; text-decoration: underline;}
+a:hover {color: #000000; text-decoration: underline;}
+a:visited {color: #E85E03; text-decoration: underline;}
+/* Blogger Navigation Bar */
+#Navbar1 {
+margin: 0;
+padding: 0;
+visibility: hidden;
+display: none;
+}
+/* -----   TOP ADS   ----- Blogger template design by Ourblogtemplates.com */
+#topads-wrapper {
+margin: 0;
+padding: 0;
+position: relative;
+text-align: center;
+width: 100%;
+}
+#topads {margin: 0; padding: 0;}
+#topads .widget {margin: 0; padding: 5px 0;}
+/* -----   HEADER   ----- Blogger template design by Ourblogtemplates.com */
+#header-wrapper {
+margin: 0px 0px 0px 0px;
+padding: 0px;
+padding-top: 0;
+padding-bottom: 0;
+width: 980px;
+background: #fafafa;
+border: 0px solid #ffffff;
+border-top: 0px solid #ffffff;
+}
+#header {
+width: 980px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+text-align: left;
+}
+#header h1 {
+font: normal normal 195% Georgia, Times, serif;
+font-variant: small-caps;
+margin: 0px 0px 0px 0px;
+padding: 50px 15px 0px 650px;
+color: #E85E03;
+}
+#header h1 a {
+text-decoration: none;
+color: #E85E03;
+}
+#header h1 a:hover {
+text-decoration: underline;
+color: #b3b3b3;
+}
+#header .description {
+color: #b3b3b3;
+font: normal normal 75% Verdana, sans-serif;
+margin: 0px 0px 0px 0px;
+padding: 0px 15px 25px 650px;
+}
+#header h1 p, #header .description p {margin:0;padding:0}
+#header a img {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+border: 0;
+}
+/* -----   LINKBAR   ----- Blogger template design by Ourblogtemplates.com */
+#linkbar-wrapper {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+width: 978px;
+position: relative;
+}
+#linkbar .widget {
+margin: 0px 0px 0px 0px;
+padding: 6px 0px 6px 80px;
+text-align: left;
+background: #fafafa;
+border-bottom: 1px solid #7f7f7f;
+border-right: 0px solid #7f7f7f;
+}
+#linkbar ul {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+list-style-type:none;
+}
+#linkbar li {
+display: inline;
+}
+#linkbar h2 {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+display: none;
+visibility: hidden;
+}
+#linkbar a {
+clear: both;
+margin: 0px -5px 0px 0px;
+padding: 8px 25px 7px 25px;
+width:100%;
+text-decoration:none;
+font: normal normal 63% Verdana, sans-serif;
+color: #333333;
+background: #ffeadf;
+border-right: 1px solid #7f7f7f;
+border-left: 1px solid #7f7f7f;
+border-top: 1px solid #7f7f7f;
+border-bottom: 1px solid #7f7f7f;
+}
+#linkbar a:hover {
+font-weight: bold;
+color: #E85E03;
+background: #ffffff;
+}
+/* -----   MIDDLE ADS   ----- Blogger template design by Ourblogtemplates.com */
+#middleads-wrapper {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+width: 980px;
+position: relative;
+text-align: center;
+}
+#middleads, #middleads2 {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+/* background: #fafafa;
+ * border-top: 1px solid #fafafa;
+ * border-left: 1px solid #fafafa;
+ * border-right: 1px solid #fafafa; */
+}
+#middleads .widget, #middleads2 .widget {
+margin: 0;
+padding: 10px 0;
+}
+/* -----   MAIN   ----- Blogger template design by Ourblogtemplates.com */
+#content-wrapper {
+width: 980px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+position: relative;
+text-align: left;
+background: #fafafa;
+border: 0px solid #fafafa;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrapper {
+float: left;
+width: 639px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+#main {
+width: 613px;
+margin: 12px;
+margin-top: 0;
+margin-bottom: 0;
+padding: 35px 0 0 0;
+color: #7f7f7f;
+font: normal normal 70% Verdana, sans-serif;
+background: #fafafa;
+border-right: 0px solid #7f7f7f;
+border-bottom: 0px solid #7f7f7f;
+}
+#main .widget {
+margin: 0px 0px 0px 0px;
+padding: 0px 25px 20px 16px;
+}
+.post {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+line-height: 1.6em;
+text-align: justify;
+}
+.post h3 {
+margin: 0px 0px 3px 0px;
+padding: 0px 0px 9px 0px;
+color: #333333;
+font: normal normal 165% Verdana, sans-serif;
+text-decoration: none;
+text-align: left;
+line-height: 1.4em;
+/* text-transform: uppercase; */
+border-right: 0px solid #e6e6e6;
+border-bottom: 1px solid #e6e6e6;
+}
+.post h3 a, .post h3 a:visited {
+color: #333333;
+text-decoration: none;
+}
+.post h3 a:hover {
+color: #E85E03;
+text-decoration: none;
+}
+.post-header-line-1 {
+}
+h2.date-header {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 20px 0px;
+text-align: left;
+color: #cccccc;
+font: normal normal 83% Arial, sans-serif;
+text-decoration: none;
+text-transform: uppercase;
+}
+.date-header span {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.post-body p {
+/* Fix bug in IE5/Win with italics in posts */
+margin: 0px 0px 0px 0px;
+padding: 1px 0px 1px 0px;
+display: inline; /* to fix floating-ads wrapping problem in IE */
+height: 1%;
+overflow: visible;
+}
+.post-body p a, .post-body p a:visited {
+color: #E85E03;
+text-decoration: underline;
+}
+.post-body a:hover {
+text-decoration: underline;
+color: #000000;
+}
+.post ul {
+margin: 0px 0px 0px 0px;
+padding: 12px 0px 12px 30px;
+list-style-type: disc;
+line-height: 1.6em;
+font-size: 95%;
+}
+.post ol {
+margin: 0px 0px 0px 0px;
+padding: 12px 0px 12px 30px;
+line-height: 1.6em;
+font-size: 95%;
+}
+.post li {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 8px 0px;
+}
+a img {
+margin: 5px 5px 5px 5px;
+padding: 0px 0px 0px 0px;
+}
+.post img {
+margin: 0px;
+padding: 5px;
+background: #ffffff;
+border: 1px solid #ffffff;
+}
+/* -----   POST-FOOTER   ----- Blogger template design by Ourblogtemplates.com */
+.post-footer {
+display: block;
+margin: 25px 0px 30px 0px;
+padding: 4px 7px 4px 7px;
+text-align: left;
+font: normal normal 94% Verdana, sans-serif;
+color: #cccccc;
+font-weight: normal;
+line-height: 1.6em;
+text-decoration: none;
+background: #fafafa;
+border-bottom: 1px solid #e6e6e6;
+border-top: 1px solid #e6e6e6;
+}
+.post-footer-line {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.post-footer-line-1, .post-footer-line-2, .post-footer-line-3 {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.post-footer a {
+color: #7f7f7f;
+text-decoration: none;
+}
+.post-footer a:hover {
+color: #000000;
+text-decoration: underline;
+}
+.post-footer .post-comment-link a {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #7f7f7f;
+font-weight: normal;
+text-decoration: none;
+}
+.post-footer .post-comment-link a:hover {
+color: #000000;
+text-decoration: underline;
+}
+.post-footer .post-icons {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.post-footer img {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 5px 0px;
+background: #fafafa;
+}
+#blog-pager {
+margin: 0px 0px 0px 0px;
+padding: 20px 0px 0px 0px;
+text-align: center;
+font: normal normal 94% Verdana, sans-serif;
+color: #333333;
+}
+#blog-pager a {color: #333333}
+#blog-pager a:hover {color: #000000}
+#blog-pager-newer-link {
+float: left;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+#blog-pager-older-link {
+float: right;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.feed-links {
+margin: 5px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+clear: both;
+text-align: left;
+font: normal normal 94% Verdana, sans-serif;
+color: #333333;
+}
+.feed-links a, .feed-links a:visited {color: #333333}
+.feed-links a:hover {color: #000000}
+/* -----   BLOCKQUOTE   ----- */
+blockquote {
+margin: 10px 0px 10px 0px;
+padding: 10px 12px 10px 12px;
+font: italic normal 95% Verdana, sans-serif;
+line-height: 1.6em;
+color: #999999;
+background: #ffffff;
+border: 1px solid #e6e6e6;
+}
+/* -----   CODE   ----- */
+code {
+color: #999999;
+font-size: 110%;
+}
+/* -----   SIDEBAR   ----- Blogger template design by Ourblogtemplates.com */
+#side-wrapper1 {
+width: 156px;
+float: left;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+#side-wrapper2 {
+width: 339px;
+float: left;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+#side-wrapper {
+float: left;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+.sidebar {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+text-align: left;
+font: normal normal 69% Verdana, sans-serif;
+}
+#sidebar1 {
+width: 152px;
+margin: 7px 7px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #7f7f7f;
+line-height: 1.8em;
+}
+#sidebar2 {
+width: 332px;
+margin: 12px 7px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #7f7f7f;
+line-height: 1.8em;
+}
+#sidebar3 {
+width: 164px;
+margin: 0px 4px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #7f7f7f;
+line-height: 1.8em;
+}
+#sidebar4 {
+width: 164px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #7f7f7f;
+line-height: 1.8em;
+}
+#sidebar1 .widget {
+margin: 0px 0px 15px 0px;
+padding: 15px 15px 15px 15px;
+background: #fafafa;
+border: 1px solid #fafafa;
+}
+#sidebar2 .widget {
+margin: 0px 0px 15px 0px;
+padding: 15px 15px 15px 15px;
+background: #fafafa;
+border: 1px solid #fafafa;
+}
+#sidebar3 .widget, #sidebar4 .widget {
+margin: 0px 0px 4px 0px;
+padding: 15px 15px 15px 15px;
+background: #fafafa;
+border: 1px solid #fafafa;
+}
+/* sidebar heading ----- Blogger template design by Ourblogtemplates.com */
+#sidebar1 h2, #sidebar2 h2, #sidebar3 h2, #sidebar4 h2 {
+margin: -5px 0px 4px 0px;
+padding: 5px 0px 1px 0px;
+text-align: left;
+color: #E85E03;
+font: normal normal 105% Verdana, sans-serif;
+/* text-transform: uppercase; */
+text-decoration: underline;
+/* background: #E85E03; */
+border-bottom: 1px solid #fafafa;
+}
+.sidebar ul {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.sidebar li {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+line-height: 1.8em;
+list-style-type: none;
+border-bottom: 0px solid #e6e6e6;
+}
+#sidebar1 a, #sidebar2 a, #sidebar3 a , #sidebar4 a  {
+color: #7f7f7f;
+text-decoration: none;
+}
+#sidebar1 a:hover, #sidebar2 a:hover, #sidebar3 a:hover, #sidebar4 a:hover {
+text-decoration: none;
+color: #E85E03;
+}
+#sidebar1 a:visited, #sidebar2 a:visited, #sidebar3 a:visited, #sidebar4 a:visited {
+text-decoration: none;
+color: #7f7f7f;
+}
+.sidebar a img {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+border: 1px solid #fafafa;
+}
+/* -----   PROFILE   ----- Blogger template design by Ourblogtemplates.com */
+.profile-img {
+margin: 7px;
+padding: 0px;
+border: 1px solid #e6e6e6;
+}
+.profile-textblock {
+margin: 0px 0px 0px 0px;
+padding: 3px 0px 3px 0px;
+clear: both;
+line-height: 1.6em;
+/* border-top: 1px solid #e6e6e6;
+ * border-bottom: 1px solid #e6e6e6; */
+}
+.profile-datablock {
+margin: 2px 0px 5px 0px;
+padding: 0px 0px 0px 0px;
+}
+.profile-data {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+font-weight: normal;
+font-style: italic;
+}
+.profile-link {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+/* -----   COMMENT   ----- Blogger template design by Ourblogtemplates.com */
+#comments {
+margin: 0px 0px 0px 0px;
+padding: 0px 30px 20px 30px;
+text-align: left;
+color: #7f7f7f;
+font: normal normal 101% Verdana, sans-serif;
+}
+.comments-singleblock {
+margin: 10px 0px 15px 0px;
+padding: 15px;
+background: #fafafa;
+border-top: 1px solid #e6e6e6;
+}
+/* comment-header */
+#comments h4 {
+margin: 20px 0px 0px 0px;
+padding: 0px 0px 20px 0px;
+color: #333333;
+font: normal normal 165% Georgia, Times, serif;
+/* text-transform: uppercase; */
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+margin: 5px 0px 5px 0px;
+}
+.comment-author {
+margin: -15px -15px 0px -15px;
+padding: 5px 15px 5px 15px;
+color: #E85E03;
+font-weight: normal;
+background: #fafafa;
+border-bottom: 1px solid #e6e6e6;
+}
+.comment-author a {color: #E85E03; text-decoration: none;}
+.comment-author a:hover {color: #b3b3b3; text-decoration: underline;}
+.comment-author a:visited {color: #E85E03; text-decoration: none;}
+.comment-body {margin: 0; padding: 10px 0px 0px 30px;}
+.comment-body p {margin: 0; padding: 0; line-height: 1.6em;}
+.comment-footer, .comment-footer a {margin: 0px 0px 0px 0px; padding: 4px 0px 0px 0px;}
+.comment-timestamp {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #b3b3b3;
+}
+.comment-timestamp a {
+color: #b3b3b3;
+text-decoration: none;
+}
+.comment-timestamp a:hover {color: #E85E03; text-decoration: underline;}
+#comments ul {margin: 0; padding: 0; list-style-type: none;}
+#comments li {margin: 0; padding: 0;}
+a.comment-link {
+/* ie5.0/win doesn't apply padding to inline elements,
+ * so we hide these two declarations from it */
+padding: 0px 0px 0px 0px;
+}
+html>body a.comment-link {
+/* respecified, for ie5/mac's benefit */
+padding-left: 0px;
+}
+#backlinks-container {margin-top: 30px}
+/* -----   LOWER SECTION   ----- Blogger template design by Ourblogtemplates.com */
+#lower-wrapper {
+margin: 0px 0px 0px 0px;
+padding: 30px 0px 0px 0px;
+width: 980px;
+font: normal normal 69% Verdana, sans-serif;
+color: #4c4c4c;
+background: #ffeadf;
+border-top: 1px solid #7f7f7f;
+border-bottom: 1px solid #7f7f7f;
+}
+#lowerbar-wrapper {
+float: left;
+margin: 0px 0px 0px 26px;
+padding: 0px 0px 0px 0px;
+width: 292px;
+text-align: left;
+line-height: 1.8em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+#lowerads-wrapper {
+float: left;
+margin: 0px 0px 0px 20px;
+padding: 0px 0px 0px 0px;
+width: 100%;
+text-align: center;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+}
+.lowerbar .widget {
+margin: 0 0 15px 0;
+padding: 20px 20px 20px 20px;
+border: 1px solid #ffeadf;
+background: #ffeadf;
+}
+.lowerbar {margin: 0; padding: 0;}
+.lowerads {margin: 0; padding: 0;}
+.lowerads .widget {margin: 0; padding: 10px 0px 10px 0px;}
+.lowerbar h2 {
+margin: -10px 0px 7px 0px;
+padding: 5px 0px 2px 0px;
+color: #E85E03;
+font: normal normal 105% Verdana, sans-serif;
+text-align: left;
+/* text-transform: uppercase; */
+text-decoration: underline;
+/* background: #ffffff; */
+border-bottom: 0px solid #e6e6e6;
+}
+.lowerbar ul {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+.lowerbar li {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+line-height: 1.8em;
+list-style-type: none;
+border-bottom: 0px solid #d5cDc3;
+}
+.lowerbar a {color: #4c4c4c; text-decoration: none;}
+.lowerbar a:hover {text-decoration: underline; color: #E85E03;}
+.lowerbar a:visited {text-decoration: none; color: #4c4c4c;}
+/* -----   FOOTER   ----- Blogger template design by Ourblogtemplates.com */
+#footer-wrapper {
+clear: both;
+display: inline; /* handles IE margin bug */
+float: left;
+width: 980px;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+#footer {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+width: 980px;
+text-align: right;
+color: #7f7f7f;
+font: normal normal 61% Verdana, sans-serif;
+line-height: 1.6em;
+background: #ffffff;
+border: 0px solid #ffffff;
+border-top: 0;
+border-bottom: 0;
+}
+#footer h2 {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+color: #b3b3b3;
+font: normal normal 86% Verdana, sans-serif;
+}
+#footer .widget {
+margin: 0px 0px 0px 0px;
+padding: 5px 0px 5px 0px;
+}
+.footer p {margin: 0; padding: 0}
+.footer a {
+color: #7f7f7f;
+text-decoration: none;
+}
+.footer a:hover {
+color: #E85E03;
+text-decoration: underline;
+}
+.footer a:visited {
+color: #7f7f7f;
+text-decoration: none;
+}
+/* -----   BOTTOM ADS   ----- Blogger template design by Ourblogtemplates.com */
+#bottomads-wrapper {
+margin: 0;
+padding: 0;
+position: relative;
+text-align: center;
+width: 100%;
+}
+#bottomads {margin: 0; padding: 10px 0;}
+#bottomads .widget {margin: 0; padding: 5px 0;}
+/* -----   CREDIT   ----- */
+#credit {
+margin: 0px 0px 0px 0px;
+padding: 2px 0px 0px 0px;
+width: 100%;
+height: 26px;
+clear: both;
+font-family: verdana, helvetica;
+font-size: 70%;
+color: #444444;
+font-weight: normal;
+background: #777777;
+}
+#creditleft {
+margin: 0px 0px 0px 0px;
+padding: 7px 0px 0px 0px;
+height: 26px;
+position: relative;
+float: left;
+text-align: left;
+display: inline;
+width: 71%;
+background: #ffffff;
+}
+#creditright {
+margin: -33px 0px 0px 0px;
+padding: 7px 0px 0px 0px;
+height: 26px;
+position: relative;
+float: right;
+text-align:right;
+display: inline;
+width: 30%;
+background: #ffffff;
+}
+#creditleft p {
+margin: 0;
+padding: 0
+}
+#creditright p {
+margin: 0;
+padding: 0
+}
+#creditleft a, .creditleft a:hover, .creditleft a:visited {
+color: #444444;
+text-decoration: underline;
+}
+#creditright a, .creditright a:hover, .creditright a:visited {
+color: #444444;
+text-decoration: underline;
+}
+/* ************ END OF CSS STYLING ************ */
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main,
+body#layout #sidebar {
+padding: 0;
+}
+ 

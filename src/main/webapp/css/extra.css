@@ -1,0 +1,20 @@
+#header-inner {
+	background: url('http://4.bp.blogspot.com/_vstR4q94fu8/Su7KZF4Tk_I/AAAAAAAAC8o/LEsFpM-RECA/S1600-R/oranges2.png') no-repeat;
+	width: 980px;
+	height: 150px;
+}
+.titlewrapper {
+	background: transparent;
+}
+.title {
+	background: transparent;
+	border-width: 0px;		
+}
+
+#navbar-iframe {
+	display:block;
+}
+
+.clear {
+	clear:both;
+}

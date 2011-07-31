@@ -1,0 +1,26 @@
+#blogentry {
+	width:50%;	
+	background-color: #ccc;
+	border: 1px dotted #333;
+	padding: 5px;
+	margin:0px auto;
+}
+
+div.row {
+  clear:both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed;
+}
+div.row span.label {
+  float: left;
+  width: 100px;
+  margin-right:10px;
+  text-align: right;
+}
+div.row span.formw {
+  float: right:
+  width: 235px;
+  text-align: left;
+}  
+
